@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffe0ec, #e4ddff, #d7f5ff);
+    color: #42335f;
+}
+
+.timer-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 40px 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid white;
+    border-radius: 28px;
+    box-shadow: 0 15px 45px rgba(116, 86, 160, 0.18);
+}
+
+.tag {
+    display: inline-block;
+    background: #ffe6f0;
+    color: #d64f8c;
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 12px;
+    color: #6945a1;
+}
+
+.subtitle {
+    color: #827596;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e5d8fa;
+    border-radius: 12px;
+    background: #fffaff;
+    color: #42335f;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #b68ae8;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin: 16px 0 30px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d66ba7, #8d6add);
+    color: white;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px #d9c4ef;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.time-box {
+    padding: 22px 8px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #fff0f6, #f0eaff);
+    border: 1px solid #f1dafa;
+}
+
+.time-box span {
+    display: block;
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: bold;
+    color: #9b60c9;
+}
+
+.time-box p {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #806b98;
+}
+
+#message {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #d45591;
+    line-height: 1.5;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #a394b9;
+}
+
+@media (max-width: 450px) {
+    .timer-card {
+        padding: 28px 16px;
+    }
+
+    .countdown {
+        gap: 7px;
+    }
+
+    .time-box {
+        padding: 18px 3px;
+    }
+
+    .time-box p {
+        font-size: 11px;
+    }
+}
